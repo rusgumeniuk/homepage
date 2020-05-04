@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Résumé</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="My very own personal website.">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+    <meta name="subject" content="This is just a résumé.">
+    <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <style>
+        .color.gold:before {
+            background-color: gold;
+        }
+        
+        .color.red:before {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <dialog id="movieCareer">
+        <a class="close" href="#resume" title="Hide movie cameos">Сховати</a>
+        <div class="cameos"></div>
+    </dialog>
+    <header>
+        <div class="credits">
+            Натхненно
+            <a href="https://dribbble.com/shots/1828130-Resume" rel="external"><strong>Resume by Iryna
+                    Nezhynska</strong></a>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="page" style="border-color: red;">
+                <div class="stackable grid">
+                    <div class="row">
+                        <div class="three wide center aligned column">
+                            <div class="avatar-wrapper">
+                                <object class="avatar" data="/assets/images/avatar.svg" role="img" aria-label="My profile picture">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        id="avatar" viewBox="0 0 99.1 127.4" version="1.1">
+                                        <g>
+                                            <image xmlns="http://www.w3.org/2000/svg" id="face" x="0" y="0" width="100%"
+                                                height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="
+                                             data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMTZ7ZmlsbDojYWY4NDRiO30uY2xzLTEsLmNscy0xMSwuY2xzLTE4LC5jbHMtMTksLmNscy0yMCwuY2xzLTIxLC5jbHMtNiwuY2xzLTd7c3Ryb2tlOiMzMzM7fS5jbHMtMSwuY2xzLTIwe3N0cm9rZS1taXRlcmxpbWl0OjEwO30uY2xzLTEsLmNscy0xOCwuY2xzLTE5LC5jbHMtMjEsLmNscy02LC5jbHMtN3tzdHJva2Utd2lkdGg6NHB4O30uY2xzLTJ7ZmlsbDojNDQ1NjZiO30uY2xzLTIxLC5jbHMtM3tmaWxsOiMzYjQ4NWI7fS5jbHMtNHtmaWxsOiNkMWQ4ZGI7fS5jbHMtNXtmaWxsOiNkZGI4YWY7fS5jbHMtMjMsLmNscy02e2ZpbGw6I2JhMzYyYTt9LmNscy0xMSwuY2xzLTE4LC5jbHMtMTksLmNscy0yMSwuY2xzLTYsLmNscy03e3N0cm9rZS1saW5lam9pbjpyb3VuZDt9LmNscy03e2ZpbGw6I2ViZjBmMjt9LmNscy04e2ZpbGw6I2VkY2NjMzt9LmNscy05e2ZpbGw6I2U1YzJiYTt9LmNscy0xMHtmaWxsOiNkYmI4YjI7fS5jbHMtMTEsLmNscy0xOCwuY2xzLTE5LC5jbHMtMjB7ZmlsbDpub25lO30uY2xzLTExLC5jbHMtMTgsLmNscy0yMHtzdHJva2UtbGluZWNhcDpyb3VuZDt9LmNscy0xMXtzdHJva2Utd2lkdGg6M3B4O30uY2xzLTEye2ZpbGw6I2UyYjg4Njt9LmNscy0xM3tmaWxsOiNkOGE3NjY7fS5jbHMtMTR7ZmlsbDojZDNhODc5O30uY2xzLTE1e2ZpbGw6I2M5OTg1ZDt9LmNscy0xN3tmaWxsOiMzMzM7fS5jbHMtMjB7c3Ryb2tlLXdpZHRoOjJweDt9LmNscy0yMntmaWxsOiNmZmY7fS5jbHMtMjR7ZmlsbDojMmY2MmFiO308L3N0eWxlPjwvZGVmcz48dGl0bGU+ZG9uYWxkLXRydW1wPC90aXRsZT48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zOCw1OVY2OXEwLDYsNiw2SDg0cTYsMCw2LTZWNTlaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTIwLDEwM2MtLjYzLTMuNzQtMy0xNC4yMi0xMi0xOEM5Myw3OC42Myw4My43Nyw3NSw2NCw3NVMzNSw3OC42MywyMCw4NUMxMSw4OC44LDguNjMsOTkuMjgsOCwxMDNjMS42OCwxLDI1LjY5LDEyLDU2LDEyQzkwLjcxLDExNSwxMTUuNDcsMTA1Ljc5LDEyMCwxMDNaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTA4Ljg1LDkzLjdjLTE1LTYuMzgtMjUuMDgtMTAtNDQuODUtMTBzLTI5LjgzLDMuNjQtNDQuODUsMTBDMTQsOTUuOSwxMS40OSwxMDAuMTIsMTAuMiwxMDRjNS44NSwyLjY4LDI3LjExLDExLDUzLjgsMTEsMjQuNTQsMCw0Ni44My03LjU1LDUzLjgxLTEwLjkyQzExNi41MywxMDAuMTUsMTE0LjA2LDk1LjkxLDEwOC44NSw5My43WiIvPjxwYXRoIGNsYXNzPSJjbHMtNCIgZD0iTTM3LjE3LDc4LjQ2YTI2Ni4yNywyNjYuMjcsMCwwLDAsOS45MSwzNS40MUExMzMuNjIsMTMzLjYyLDAsMCwwLDY0LDExNWExMzQuOTIsMTM0LjkyLDAsMCwwLDE5LjE5LTEuNDUsMzU4LjY5LDM1OC42OSwwLDAsMCw3LjE3LTM1LjJDODMsNzYuMTYsNzUuMTgsNzUsNjQsNzUsNTIuNTgsNzUsNDQuNjksNzYuMjEsMzcuMTcsNzguNDZaIi8+PHBhdGggaWQ9Il9QYXRoXyIgZGF0YS1uYW1lPSImbHQ7UGF0aCZndDsiIGNsYXNzPSJjbHMtNSIgZD0iTTg0LDczYy0zLjI0LDUuMzUtMTEuNjEsMTctMTgsMjBINjJjLTYuMzktMy0xNC43Ni0xNC42NS0xOC0yMFY2OUg4NFoiLz48cGF0aCBjbGFzcz0iY2xzLTYiIGQ9Ik01Ni43NiwxMTQuNzVjMi4zNy4xNCw0Ljc4LjIyLDcuMjQuMjJzNC44NS0uMDgsNy4yNC0uMjJMNjYsMTAxSDYyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtNiIgcG9pbnRzPSI2NS45OSAxMDEuMDIgNzAgOTMuMDMgNTggOTMuMDMgNjIuMDEgMTAxLjAyIDY1Ljk5IDEwMS4wMiIvPjxwYXRoIGlkPSJfUGF0aF8yIiBkYXRhLW5hbWU9IiZsdDtQYXRoJmd0OyIgY2xhc3M9ImNscy03IiBkPSJNNDQsNzNsLTQsOCwxNCwyNCw4LTEyQzU1LjYxLDkwLDQ3LjI0LDc4LjM3LDQ0LDczWiIvPjxwYXRoIGlkPSJfUGF0aF8zIiBkYXRhLW5hbWU9IiZsdDtQYXRoJmd0OyIgY2xhc3M9ImNscy03IiBkPSJNODQsNzNsNCw4TDc0LDEwNSw2Niw5M0M3Mi4zOSw5MCw4MC43Niw3OC4zNyw4NCw3M1oiLz48cGF0aCBjbGFzcz0iY2xzLTgiIGQ9Ik02NCw4M2MyLjg3LDAsMTAsMCwxNC00czgtMTIsOC0xOGM0LjA5LS4yLDYtNC4wNiw2LjUzLTcuODNDOTQuMTcsNDIuMDcsODkuMjcsNDIuNDgsODgsNDNjMCwwLDAtNSwwLTgsLjA5LTkuNDMtNS40NS0xOS44MS0yNC0xOS44MVMzOS45MSwyNS41OSw0MCwzNWMwLDMsMCw4LDAsOC0xLjI5LS41My02LjE2LTEuMTQtNC40NywxMC4zMy41NiwzLjc3LDIuNDEsNy40Nyw2LjUsNy42NywwLDYsNCwxNCw4LDE4UzYxLjEzLDgzLjA1LDY0LDgzWiIvPjxwYXRoIGNsYXNzPSJjbHMtOSIgZD0iTTg2LDYxYzQuMDktLjIsNi00LjA2LDYuNTMtNy44M0M5NC4xNyw0Mi4wNyw4OS4yNyw0Mi40OCw4OCw0M2MwLDAsMC01LDAtOCwuMDktOS40My01LjQ1LTE5LjgxLTI0LTE5LjgxLS42NiwwLTEuMjcsMC0xLjkxLjA3QzU3LjY5LDMxLjQzLDU0LjY5LDQ5LDU0LjkyLDYyLjY0YzAsNC43NC41MiwxMi4xNywxLjIzLDE5LjU5QTMxLjI2LDMxLjI2LDAsMCwwLDY0LDgzYzIuODcsMCwxMCwwLDE0LTRTODYsNjcsODYsNjFaIi8+PHBhdGggY2xhc3M9ImNscy05IiBkPSJNODguNDMsNDJzLjI0LTQuMzUuMjQtNy4zYy4wOS05LjQ0LTYuMTItMTkuNDUtMjQuNzEtMTkuNDVzLTI0LjgsMTAtMjQuNzEsMTkuNDVjMCwzLC4yNCw3LjMuMjQsNy4zLTEuNDItLjU5LTEuNzItLjU5LTMuNDksMS4wNiw0LjU2LDMuNDUsNiw2Ljg3LDYsMTBhMi42NSwyLjY1LDAsMCwwLDIuODgtMi4zNGwuOTEtNi4zMywyLjE1LTIuMjl2LTEuN2EyNSwyNSwwLDAsMCwyLjc3Ljg0QzYxLjI3LDQzLjY0LDc1LjY4LDM5LjQ0LDgyLDM3djRsMiwyVjUzaDIuMzNBMS44MSwxLjgxLDAsMCwwLDg4LDUxLjgyYy44MS0yLjIxLDIuNDEtNC43Myw0LjgzLTUuNzNhNSw1LDAsMCwwLTEuNTItM0M4OS41Nyw0MS40OSw4OS44NSw0MS4zNyw4OC40Myw0MloiLz48cGF0aCBjbGFzcz0iY2xzLTEwIiBkPSJNNTYuNDgsNDEuOUM2Niw0Mi4yMyw3Ni43OCwzOSw4MiwzN3Y0bDIsMlY1M2gyLjMzQTEuODEsMS44MSwwLDAsMCw4OCw1MS44MmE5LjkxLDkuOTEsMCwwLDEsNC41Mi01LjU3QzkxLjY2LDQyLjM0LDg4LjksNDIuNjQsODgsNDNjMCwwLDAtNSwwLTgsLjA5LTkuNDMtNS40NS0xOS44MS0yNC0xOS44MS0uNjYsMC0xLjI3LDAtMS45MS4wN0EyMzIuMTcsMjMyLjE3LDAsMCwwLDU2LjQ4LDQxLjlaIi8+PHBhdGggY2xhc3M9ImNscy0xMSIgZD0iTTM5LjQ5LDQwLjI1bC0uMDYuMDZjMCwuOTIuMDYsMS41NC4wNiwxLjYyIi8+PHBhdGggY2xhc3M9ImNscy0xMSIgZD0iTTg4LjUyLDQxLjkzbC0uMDksMHMwLS42Ni4wNi0xLjY1bC0uMDYtLjA2Ii8+PHBhdGggY2xhc3M9ImNscy0xMiIgZD0iTTkyLDI5Yy0xLjc2LTUuNjUtMTMuNDYtMTYtMjgtMTZDNDIuNzYsMTMsMzYuNDIsMjkuOTIsMzYsMzFsMiwyYy0xLjQsNi40My0yLDEwLTIsMTAsMy44MSwzLjgyLDYsNS4wOSw2LDEwaDJWNDNsMi0yVjM3YzQuNzIsMS4xLDE2LjEzLDUuNDUsMzYtNHY4bDIsMlY1M2gyYzAtNC45Myw1LjgtMTAuMTYsNi0xMGExNi43LDE2LjcsMCwwLDAtMi4wNy0xMS45M0EzLjg4LDMuODgsMCwwLDAsOTIsMjlaIi8+PHBhdGggY2xhc3M9ImNscy0xMyIgZD0iTTQyLDUzaDJWNDNsMi0yVjM3YzQuNzIsMS4xLDE2LjEzLDUuNDUsMzYtNHY4bDIsMlY1M2gyYzAtMSwuNDEtNC40NSw0LTguMDdDODkuODEsNDQuMjQsOTAsMzcsODYsMzFsNi0yaDBjLTItNi4zNi0xNy42OS0xNi44LTMyLjc2LTEyLjc1QzUyLjkyLDE4LDQyLjk0LDIyLjg4LDQwLDMxbDIsMi4zM0E3NS43MSw3NS43MSwwLDAsMCwzOCw0NUMzOS42Niw0Ni42OCw0Miw0OC4yNyw0Miw1M1oiLz48cG9seWdvbiBjbGFzcz0iY2xzLTE0IiBwb2ludHM9IjgxLjU0IDMzLjQ0IDg5Ljc3IDMwLjk5IDkwLjc3IDM0LjY0IDgxLjU5IDM3LjQ1IDgxLjU0IDMzLjQ0Ii8+PHBhdGggY2xhc3M9ImNscy0xNSIgZD0iTTg4LjE5LDM1LjM5YTIwLjg0LDIwLjg0LDAsMCwwLTEuODUtMy44MUw4MiwzM3Y0LjMyWiIvPjxwYXRoIGNsYXNzPSJjbHMtMTYiIGQ9Ik04My40MywzM2wtLjUzLDgtLjI2LS42MywxLjg1LDIuMTUuMDYuMDhhLjU2LjU2LDAsMCwxLC4xNC40MUw4NCw1M2wtLjY5LTEwLC4yLjQ4LTIuMTUtMS44NWEuNzUuNzUsMCwwLDEtLjI2LS41MVY0MWwtLjUzLThhMS40MywxLjQzLDAsMCwxLDIuODYtLjE4WiIvPjxwYXRoIGNsYXNzPSJjbHMtMTYiIGQ9Ik00Ny40MywzNSw0Nyw0MXYuMTdhLjc4Ljc4LDAsMCwxLS4yOS41N2wtMi4xOSwxLjguMjItLjUzTDQ0LDUzbC0uNzYtMTBhLjYxLjYxLDAsMCwxLC4xMy0uNDRsLjA5LS4xLDEuODEtMi4yTDQ1LDQxbC0uNC02YTEuNDMsMS40MywwLDEsMSwyLjg2LS4xOFoiLz48cGF0aCBjbGFzcz0iY2xzLTEzIiBkPSJNNDAsMzFjNiw2LDE0LDE0LDQ0LDBDODQsMzEsNTQsMTcsNDAsMzFaIi8+PHBhdGggY2xhc3M9ImNscy0xNiIgZD0iTTg0Ljc4LDMyLjQ4YTg0LjQ2LDg0LjQ2LDAsMCwxLTEwLjcsNC4xMUE2Niw2NiwwLDAsMSw2MywzOS4wNWEzMy43MiwzMy43MiwwLDAsMS0xMS4zOC0uMzJBMTYuNzgsMTYuNzgsMCwwLDEsNDIsMzNhMTYuMzUsMTYuMzUsMCwwLDAsOS43Myw0LjksMzIuNTgsMzIuNTgsMCwwLDAsMTEtLjUsNjQuMDUsNjQuMDUsMCwwLDAsMTAuNTgtMy4xNyw4MS42LDgxLjYsMCwwLDAsMTAtNC42OFoiLz48cGF0aCBjbGFzcz0iY2xzLTEyIiBkPSJNNzYsMzFjLTEuMzIuNjUtMi42OCwxLjE5LTQsMS43MXMtMi43OS45LTQuMjIsMS4yMWEzOS43LDM5LjcsMCwwLDEtNC4zMy43OWMtLjczLjA5LTEuNDYuMTktMi4yLjI0TDU5LDM1LjA5YTM4LjM3LDM4LjM3LDAsMCwxLTguODEtLjc3QTIyLjQ5LDIyLjQ5LDAsMCwxLDQyLDMxYTU5Ljc2LDU5Ljc2LDAsMCwwLDguNDksMS4wOGMyLjgxLjE4LDUuNjIuMTksOC40My4xM3M1LjYyLS4yOCw4LjQ2LS40OGMxLjQyLS4xMSwyLjg0LS4yOCw0LjI3LS4zOFM3NC41MiwzMS4wNiw3NiwzMVoiLz48cGF0aCBjbGFzcz0iY2xzLTEyIiBkPSJNNzQsMzFhMzYuMzksMzYuMzksMCwwLDEtMy41NCwxYy0xLjIuMjEtMi40MS40Mi0zLjYyLjU0YTM2Ljc1LDM2Ljc1LDAsMCwxLTcuMzQsMCwyOS4zNSwyOS4zNSwwLDAsMS03LjItMS42M2MtLjU4LS4yMi0xLjE1LS40Ni0xLjcyLS43MXMtMS4xMi0uNTQtMS42NS0uODZBMTEuODMsMTEuODMsMCwwLDEsNDYsMjdhMzAsMzAsMCwwLDAsMy40NiwxYzEuMTMuMjksMi4yOS40OSwzLjQzLjcxLDIuMjkuNDIsNC42LjY5LDYuOTIsMXM0LjY1LjQxLDcsLjY1YzEuMTguMDcsMi4zNi4xNywzLjU2LjI5UzcyLjc4LDMwLjgxLDc0LDMxWiIvPjxwYXRoIGNsYXNzPSJjbHMtMTIiIGQ9Ik04NywyNy44NWMtMS40Ni4yNi0zLC40My00LjQzLjU1YTQ0LjQzLDQ0LjQzLDAsMCwxLTQuNDcsMEE0MS43Nyw0MS43NywwLDAsMSw2OS4yNCwyN2EzNy41MSwzNy41MSwwLDAsMS04LjMyLTMuNDNBMjMuMTcsMjMuMTcsMCwwLDEsNTQsMTcuODVhNjQuNDIsNjQuNDIsMCwwLDAsNy44OSwzLjY3YzIuNjYsMS4wNSw1LjM4LDEuOSw4LjEyLDIuNjksMS4zOC4zNiwyLjc1Ljc2LDQuMTYsMS4wNi42OS4xNiwxLjM4LjM2LDIuMDkuNDhzMS40MS4yOCwyLjEyLjQ0LDEuNDEuMjcsMi4xMy40MWwyLjE0LjQxQzg0LjA5LDI3LjI4LDg1LjU0LDI3LjQ4LDg3LDI3Ljg1WiIvPjxwYXRoIGNsYXNzPSJjbHMtMTciIGQ9Ik00Miw1M2E5Ljg5LDkuODksMCwwLDAtMi40NS01LjI1LDE1LjU3LDE1LjU3LDAsMCwwLTIuMDctMmMtLjM4LS4yOS0uNzYtLjU4LTEuMTYtLjg0bC0uNi0uNC0uMzEtLjE5LS4xNy0uMTEtLjExLS4wOHMwLDAtLjExLS4wOUwzNC45MSw0NGwwLS4wNmExLjI5LDEuMjksMCwwLDEtLjItLjM5LDEuMzksMS4zOSwwLDAsMSwuMDUtMS4wOSwxLjQyLDEuNDIsMCwwLDEsLjgzLS43NEExLjIzLDEuMjMsMCwwLDEsMzYsNDEuNmExLjQzLDEuNDMsMCwxLDEsMCwyLjg1LDEuMzksMS4zOSwwLDAsMCwuNDYtLjA3LDEuNDIsMS40MiwwLDAsMCwuODMtLjc0LDEuMzksMS4zOSwwLDAsMCwuMDUtMS4wOSwxLjExLDEuMTEsMCwwLDAtLjItLjM3bDAsMEwzNyw0Mi4wNWMtLjA4LS4wNywwLDAsMCwwbDAsMCwuMTMuMTIuMjcuMjkuNTUuNThjLjM2LjQuNzEuODEsMSwxLjIzQTE2LjIxLDE2LjIxLDAsMCwxLDQwLjc0LDQ3LDEwLjUyLDEwLjUyLDAsMCwxLDQyLDUzWiIvPjxwYXRoIGNsYXNzPSJjbHMtMTciIGQ9Ik04Niw1M2ExMC41MiwxMC41MiwwLDAsMSwxLjI2LTZBMTYuMjEsMTYuMjEsMCwwLDEsODksNDQuMjljLjMzLS40Mi42OC0uODMsMS0xLjIzbC41NS0uNTguMjctLjI5LjEzLS4xMiwwLDBzMCwwLDAsMGwtLjA3LjA4LDAsMGExLjExLDEuMTEsMCwwLDAtLjIuMzcsMS4zOSwxLjM5LDAsMCwwLDAsMS4wOSwxLjQyLDEuNDIsMCwwLDAsLjgzLjc0LDEuMzksMS4zOSwwLDAsMCwuNDYuMDcsMS40MywxLjQzLDAsMSwxLDAtMi44NSwxLjIzLDEuMjMsMCwwLDEsLjQ2LjA4LDEuNDIsMS40MiwwLDAsMSwuODMuNzQsMS4zOSwxLjM5LDAsMCwxLDAsMS4wOSwxLjI5LDEuMjksMCwwLDEtLjIuMzlsMCwuMDYtLjExLjExYy0uMS4xLS4wOC4wNy0uMTEuMDlsLS4xMS4wOC0uMTcuMTEtLjMxLjE5LS42LjRjLS40LjI2LS43OC41NS0xLjE2Ljg0YTE1LjU3LDE1LjU3LDAsMCwwLTIuMDcsMkE5Ljg5LDkuODksMCwwLDAsODYsNTNaIi8+PHBhdGggY2xhc3M9ImNscy0xNiIgZD0iTTkyLDMwLjY2Yy0xLC4zOS0xLjc5LjY2LTIuNjguOTNzLTEuNzYuNDgtMi42NS42OC0xLjc4LjM0LTIuNjcuNTItMS43OS4yMy0yLjY4LjM0YTM4LjY4LDM4LjY4LDAsMCwxLTEwLjc1LS40NSwzOS44OCwzOS44OCwwLDAsMS01LjE5LTEuMzMsMzQuNTMsMzQuNTMsMCwwLDEtNC44NS0yLjE1bC0xLjE3LS42M2E3LjIxLDcuMjEsMCwwLDEtMS4xMy0uNjhMNTYsMjYuNGExOC4xNSwxOC4xNSwwLDAsMS0yLTEuNjVMNTIsMjNsMi4xMiwxLjUzQTE3LjE4LDE3LjE4LDAsMCwwLDU2LjI4LDI2bDIuMjcsMS4yNmE2Ljg5LDYuODksMCwwLDAsMS4xNi41NmwxLjE5LjQ5YTMzLjM4LDMzLjM4LDAsMCwwLDQuODYsMS42MiwzNS43NywzNS43NywwLDAsMCw1LC43OCwzNiwzNiwwLDAsMCwxMC0uNTNsMi40Ni0uNTVjLjgtLjI1LDEuNjEtLjQ0LDIuNC0uNzFzMS41OC0uNTQsMi4zNC0uODVhMjMuMzMsMjMuMzMsMCwwLDAsMi4xNy0xWiIvPjxwYXRoIGNsYXNzPSJjbHMtMTgiIGQ9Ik05Miw0M2ExNC40MSwxNC40MSwwLDAsMC0yLjA3LTExLjkzTDkyLDI5Yy0xLjc3LTUuNjctMTMuMzUtMTYtMjgtMTZDNDEuMTMsMTMsMzYuMiwzMC41LDM2LDMxbDEuMTksMS4xOUMzNS42OSw0MC4zOSwzNiw0MywzNiw0MyIvPjxwYXRoIGNsYXNzPSJjbHMtMTkiIGQ9Ik0zNiw3OWExNDIuNjgsMTQyLjY4LDAsMCwwLTE2LDZDMTEsODguOCw4LjYzLDk5LjI4LDgsMTAzYzEuNjgsMSwyNS42OSwxMiw1NiwxMiwyNi43MSwwLDUxLjQ3LTkuMTgsNTYtMTItLjYzLTMuNzQtMy0xNC4yMi0xMi0xOGExNTEuNTUsMTUxLjU1LDAsMCwwLTE2LTYiLz48ZWxsaXBzZSBjbGFzcz0iY2xzLTE3IiBjeD0iNTUuMDIiIGN5PSI1MS41OSIgcng9IjEuNzUiIHJ5PSIxLjI1Ii8+PGVsbGlwc2UgY2xhc3M9ImNscy0xNyIgY3g9IjczLjA1IiBjeT0iNTEuNTkiIHJ4PSIxLjc1IiByeT0iMS4yNSIvPjxsaW5lIGNsYXNzPSJjbHMtMjAiIHgxPSI2MC4wNCIgeTE9IjY4LjU4IiB4Mj0iNjguMDQiIHkyPSI2OC41OCIvPjxwYXRoIGNsYXNzPSJjbHMtMjAiIGQ9Ik02MCw2MC41OGwyLjIuNmE1LjU1LDUuNTUsMCwwLDAsMy42LDBsMi4yLS42Ii8+PGxpbmUgY2xhc3M9ImNscy0yMCIgeDE9IjYzLjA0IiB5MT0iNzIuNTgiIHgyPSI2NS4wNCIgeTI9IjcyLjU2Ii8+PHBhdGggY2xhc3M9ImNscy0yMSIgZD0iTTM4LjU3LDExMi41MmMzLjg4LjczLDgsMS4zNSwxMi4zNywxLjc5QzQ3LjM5LDEwNC4xNyw0NC4yNSw4NC4zMSw0NCw3NUwzNCw3OSwzMiw4OWw2LDYtNiw2WiIvPjxwYXRoIGNsYXNzPSJjbHMtMjEiIGQ9Ik04OS40NiwxMTIuNDcsOTYsMTAxbC02LTYsNi02TDk0LDc5LDg0LDc1Yy0uMjUsOS4yOC0zLjM4LDI5LjExLTYuOTMsMzkuMjVDODEuMzcsMTEzLjgzLDg1LjUzLDExMy4yMSw4OS40NiwxMTIuNDdaIi8+PHJlY3QgY2xhc3M9ImNscy0yMiIgeD0iODQiIHk9Ijk5LjAyIiB3aWR0aD0iNiIgaGVpZ2h0PSI0Ii8+PHJlY3QgY2xhc3M9ImNscy0yMyIgeD0iODQiIHk9Ijk5LjAyIiB3aWR0aD0iNiIgaGVpZ2h0PSIwLjgiLz48cmVjdCBjbGFzcz0iY2xzLTIzIiB4PSI4NCIgeT0iMTAwLjYyIiB3aWR0aD0iNiIgaGVpZ2h0PSIwLjgiLz48cmVjdCBjbGFzcz0iY2xzLTIzIiB4PSI4NCIgeT0iMTAyLjIyIiB3aWR0aD0iNiIgaGVpZ2h0PSIwLjgiLz48cmVjdCBjbGFzcz0iY2xzLTI0IiB4PSI4NCIgeT0iOTkuMDIiIHdpZHRoPSIyLjQiIGhlaWdodD0iMi40Ii8+PHBhdGggY2xhc3M9ImNscy0xNyIgZD0iTTM3LjE4LDQzLjgyYTUuNzQsNS43NCwwLDAsMC0xLjEsNC4zMSw0My40OCw0My40OCwwLDAsMCwuNzQsNS4xNyw5Ljg3LDkuODcsMCwwLDAsMS44Myw0LjI5LDQuMzgsNC4zOCwwLDAsMCwzLjQzLDEuNzEsMS42OSwxLjY5LDAsMCwxLDEuNjIsMS40NnYuMDhhNDcuNjIsNDcuNjIsMCwwLDAsMS4zNCw3LjA3LDE3LjMyLDE3LjMyLDAsMCwwLDMuMTgsNS45MWMuNzIuOTMsMS41MywxLjg0LDIuMzIsMi43OGwuNjEuNjkuMy4zNWEyLjA4LDIuMDgsMCwwLDAsLjIxLjIxLDYuNDgsNi40OCwwLDAsMCwxLjE1Ljg1LDE4LjE1LDE4LjE1LDAsMCwwLDYuMzcsMmguMDVhMi4xMSwyLjExLDAsMCwxLC4zNi4wOSwxMy44OCwxMy44OCwwLDAsMCwzLjg2LDEsNy42OSw3LjY5LDAsMCwwLDEuODUtLjA3Yy42NC0uMSwxLjMxLS4yNiwyLS40NWgwYTEuMzMsMS4zMywwLDAsMSwuMzQsMCwxNi4wNiwxNi4wNiwwLDAsMCw2LjgxLTEuNjEsMTAsMTAsMCwwLDAsMS4zOC0uOTEsMTEuMzQsMTEuMzQsMCwwLDAsMS4yMy0xLjJjLjg4LTEsMS43My0xLjkxLDIuNTQtMi44OGExNy42NiwxNy42NiwwLDAsMCwzLjU1LTYuMjgsNDQsNDQsMCwwLDAsMS40MS03LjQ2di0uMDZhMS4zNCwxLjM0LDAsMCwxLDEuMjctMS4xNSw0LjUyLDQuNTIsMCwwLDAsMy42My0xLjksMTAuNDgsMTAuNDgsMCwwLDAsMS43Ny00LjQ1LDM4LjI4LDM4LjI4LDAsMCwwLC42NS01LjIsNS41OSw1LjU5LDAsMCwwLTEuMjQtNC4yOWgwQS45MS45MSwwLDAsMSw5Miw0Mi40NmE1Ljc3LDUuNzcsMCwwLDEsMS42OSwyLjcyLDEwLjgsMTAuOCwwLDAsMSwuNDEsMi45NCwzOC43NSwzOC43NSwwLDAsMS0uNDQsNS41NiwxMi42NiwxMi42NiwwLDAsMS0yLDUuNTgsNy40OCw3LjQ4LDAsMCwxLTIuMzgsMi4xOSw3LjMxLDcuMzEsMCwwLDEtMy4xNS45M2wxLjI4LTEuMjFhNDYuNTEsNDYuNTEsMCwwLDEtMS4yNSw4LDIwLjYyLDIwLjYyLDAsMCwxLTMuOTEsNy40M2MtLjg0LDEuMDctMS43MSwyLjEtMi41OCwzLjA5YTEzLjMxLDEzLjMxLDAsMCwxLTEuNTQsMS41OCwxMywxMywwLDAsMS0xLjg2LDEuMzEsMTksMTksMCwwLDEtOC4yOSwyLjI0bC4zNy0uMDZhMjMuMDYsMjMuMDYsMCwwLDEtMi4zOC41OCwxMS40MSwxMS40MSwwLDAsMS0yLjY4LjE3LDE3LjQ2LDE3LjQ2LDAsMCwxLTUtMS4wOGwuNC4xYTIxLjczLDIxLjczLDAsMCwxLTcuODYtMi4zOSwxMC4zNSwxMC4zNSwwLDAsMS0xLjg4LTEuMzZjLS4xNS0uMTMtLjMzLS4zMy0uNDUtLjQ2TDQ4LjE1LDgwbC0uNjQtLjdjLS44NS0xLTEuNjktMS45Mi0yLjQ5LTNhMTkuNzQsMTkuNzQsMCwwLDEtMy42MS03LjM1LDQ4LjU3LDQ4LjU3LDAsMCwxLTEuMTItNy43MmwxLjYzLDEuNTRhNy42OSw3LjY5LDAsMCwxLTMuMzEtMSw3LjkxLDcuOTEsMCwwLDEtMi40Ny0yLjMsMTIuOCwxMi44LDAsMCwxLTIuMDYtNS43MywzNS42MSwzNS42MSwwLDAsMS0uMzQtNS42MSwxMC44NiwxMC44NiwwLDAsMSwuNDctM0E1Ljc2LDUuNzYsMCwwLDEsMzYsNDIuNDZhLjkxLjkxLDAsMCwxLDEuMjQsMS4zNFoiLz48cGF0aCBjbGFzcz0iY2xzLTE3IiBkPSJNNTMsNzUuNDhhMTIuMiwxMi4yLDAsMCwwLDQuODcsNC43NUExMy4zNCwxMy4zNCwwLDAsMCw2NCw4MS40OGExMy4zMywxMy4zMywwLDAsMCw2LjExLTEuMjdBMTIuMzUsMTIuMzUsMCwwLDAsNzUsNzUuNDhhOC43MSw4LjcxLDAsMCwxLTMuMTEsNy4zMUExMiwxMiwwLDAsMSw2NCw4NS40OGExMiwxMiwwLDAsMS03LjkxLTIuNjhBOC42Myw4LjYzLDAsMCwxLDUzLDc1LjQ4WiIvPjwvc3ZnPg==
+                                             " />
+                                        </g>
+                                    </svg>
+                                </object>
+                            </div>
+                        </div>
+                        <div class="thirteen wide column">
+                            <div class="stackable grid">
+                                <div class="sixteen wide column">
+                                    <h1 class="name">Президент Дональд Трамп</h1>
+                                    <!--TODO: create class for strike text element-->
+                                    <div class="job"><strong>45<sup>й</sup></strong> Президент США</div>
+                                    <ul class="contacts">
+                                        <li>
+                                            <a href="https://www.fb.com/DonaldTrump" class="facebook" rel="author">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                                                    </svg>
+                                                <span>DonaldTrump</span>
+                                            </a>
+                                        </li>
+                                        <li id="mailMe">
+                                            <a href="mailto:realDonaldTrump@whitehouse.gov" class="mail" rel="author">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+                                                    </svg>
+                                                <span>realDonaldTrump@whitehouse.gov</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/realDonaldTrump" class="facebook" rel="author">
+                                                <!--TODO: create .contacts li a.twitter:hover -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                                    </svg>
+                                                <span>realDonaldTrump</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/realDonaldTrump/" class="facebook" rel="author">
+                                                <!--TODO: create .contacts li a.instagram:hover -->
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                                    </svg>
+                                                <span>realDonaldTrump</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sixteen wide mobile only column">
+                                    <div class="divider"></div>
+                                </div>
+                                <div class="sixteen wide column">
+                                    <h2>Резюме</h2>
+                                    <p>
+                                        - Я, безумовно, найбільш успішна людина, яка коли-небудь балотувалася в президенти. Ще ніхто і ніколи не був більш успішним, ніж я. Я найуспішніша людина, що коли-небудь бігала. Росс Перо не такий успішний, як я. Ромні - у мене є магазин Gucci, який коштує
+                                        більше, ніж Ромні. Вибачте, невдахи та ненависники, але мій IQ один із найвищих * - і ви всі це знаєте! Будь ласка, не відчувайте себе таким дурним чи невпевненим, це не ваша вина.
+                                    </p>
+                                    <p><strong>*</strong>Не вірте пліткам від демокартів про те, що результат мого IQ тесту - <a href="https://www.snopes.com/fact-check/donald-trump-nyma-iq/" rel="external">73</a>, це все лише багно, яке вони намагаються
+                                        вилити на мене</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="sixteen wide column">
+                            <div class="fat divider"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="ten wide column">
+                            <section>
+                                <h3>ДОСВІД</h3>
+                                <h6>Наразі</h6>
+                                <ul class="timeline">
+                                    <li class="highlighted">
+                                        <p>
+                                            <em>2017 - по нині</em>
+                                        </p>
+                                        <p>
+                                            <strong>45 <sup>й</sup> президент</strong> Сполучених <strong>Штатів
+                                                Америки</strong>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <h6>Тоді</h6>
+                                <ul class="timeline">
+                                    <li>
+                                        <p> <em>2016</em> </p>
+                                        <p> Виграв на <strong> презедентських виборах </strong> з перевагою у 77 голосів над <a href="https://en.wikipedia.org/wiki/2016_United_States_presidential_election" rel="external">Клінтон</a>!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2015</em></p>
+                                        <p>Став найбільш <strong>впливовим членом республіканської партії</strong> та висувся на посаду президента</p>
+                                    </li>
+                                </ul>
+                                <h6>Ще раніше</h6>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>2009</em></p>
+                                        <p>Змінив свою думку та <strong>став <button id="red"
+                                                    class="color red">республіканцем</button> </strong> <sub>знову</sub>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2005</em></p>
+                                        <p>Започактував університет Трампа разом з Майклом Секстоном та Джонатаном Спітальні: немає оцінок, сертифікатів та іншої бюрократії, але програма пропонувала курси з нерухомості, підприємництва з управління активами
+                                            та створення багатства. 98% студентів давали позитивні відгуки під час навчання, проте деякі з цих невдячних грінго подали позови проти університету Трампа після закінчення курсу. Мені довелося заплатити 25
+                                            мільйонів доларів, щоб розібратися із цим...
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2002</em></p>
+                                        <p>
+                                            Придбав колишній готель «Дельмоніко», який був відремонтований та відкритий у 2004 році як Трамп Парк Авеню. Напевно, мені подобається моє прізвище!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2001</em></p>
+                                        <p>
+                                            Завершив Всесвітню вежу Трампа і вступив до Демократичної партії
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1999</em></p>
+                                        <p>
+                                            Почав купувати поля для гольфу. Вони дуже дешеві, у мене зараз 18 у США та за кордоном! Того ж року перейшов до Партії Реформ.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1997</em></p>
+                                        <p>
+                                            Розпочав багатоповерхову забудову вздовж річки Гудзон, яка отримала назву Trump Place. Я та інші інвестори продали наші акції за 1,8 мільярда доларів, і тоді це був найбільший продаж житлового фонду в історії Нью-Йорку 1996 року. Придбав Банк Мангеттенської
+                                            Компанії, який був вакантним сімдесяти одно поверховим хмарочосом на Уолл-стріт. Після масштабного ремонту висотку перейменували на Трамп Білдінг.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1994</em></p>
+                                        <p>
+                                            Зробивши реставрацію затоки Гольф та зробивши ремонт Вестерн Білдінг на Колумбус-Серкл, перетворив його на 44-поверхову розкішну нерухомість, відому як Trump International Hotel and Tower
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1989 ― 1992</em></p>
+                                        <p>
+                                            Почав вести справи другосортної компанії, яка називалась Trump Shuttle. Яка трата грошей, мені довелося її продати, зараз це, до речі, American Airlines Shuttle.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1989</em>, <em>1990</em></p>
+                                        <p>
+                                            Дізнався про Тур де Франс і вирішив влаштувати свій власний Тур де Трампа. Невже Америка недостатньо велика для цієї велосипедної конкуренції?
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1988</em></p>
+                                        <p>
+                                            Придбав готель "Плаза" на Манхеттені за 407 мільйонів доларів, вклав 50 мільйонів доларів на відновлення будівлі і з тризіркового зробив це готель чотиризірковим (я назвав його "Мона Ліза" і продав його за знатну суму у 1995 році)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1987</em></p>
+                                        <p>
+                                            Зареєстрований як республіканець
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1985</em></p>
+                                        <p>
+                                            Я придбав маєток Мар-а-Лаго в Палм-Біч і перетворив його на приватний клуб. Ви можете приєднатися, якщо заплатите плату за вступ у розмірі 200 000 доларів (а для членів ще є щорічний внесок, адже дуже дорого бути багатим). Того року я також відкрив казино
+                                            під назвою Трампа Касл. Моя дружина Івана стала менеджером, бо вона - ще один Трамп!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1983</em></p>
+                                        <p>
+                                            Я придбав "Нью-Джерсі Генералс", команду з американського футболу. Я змінив графік гри команди і подав антимонопольний позов проти футбольної ліги Сполучених Штатів. Нью-Джерсі Генералс зараз не так добре грають, але тоді вони були чудовими!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1980</em></p>
+                                        <p>
+                                            Почав розробляти хмарочос Trump Tower на Манхеттені, я заплатив бригаді нелегальних польських працівників, щоб знести історичний магазин Bonwit Teller, включаючи арт-деко об'єкти. Все це було для того, щоб архітектурний критик Пол Голдбергер в 1983 році
+                                            сказав, що атріум вежі - це "найприємніший внутрішній громадський простір, який слід завершити в Нью-Йорку за кілька років". У той же час я також розпочав ремонтні роботи на ковзанці Wollman у Центральному парку
+                                            та завершив дану роботу за три місяці за 1,95 мільйона доларів, що на 775 000 доларів менше, ніж початковий бюджет!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1978</em></p>
+                                        <p>
+                                            Придбав 50-відсоткову частку занедбаного готелю Commodore та перетворив його на Grand Hyatt Hotel за 2 роки реконструкції
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1971</em></p>
+                                        <p>
+                                            Був підвищений на посаду президента компанії та перейменував її на The Trump Organization.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1968</em></p>
+                                        <p>
+                                            Почав свою кар’єру в компанії з розвитку нерухомості мого батька Elizabeth Trump & Son
+                                        </p>
+                                    </li>
+                                </ul>
+                                <h6>Ого, ти дійсно пролистав аж сюди?</h6>
+                                <h3>Особисте життя</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>2006</em></p>
+                                        <p>
+                                            Меланія отримала громадянство США і народила нашого сина Баррона
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2005</em></p>
+                                        <p>
+                                            Одружився з нею
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1998</em></p>
+                                        <p>
+                                            Зустрів мою майбутню третю дружину Меланію Кнаус
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1999</em></p>
+                                        <p>
+                                            Розлучився із Марлою ¯\_(ツ)_/¯
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1993</em></p>
+                                        <p>
+                                            Одружився з Марлою Мейплз, яка народила мені доньку, яку ми назвали Тіффані, тому що мені подобаються ювелірні вироби від Tiffany & Company
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1992</em></p>
+                                        <p>
+                                            Розпочав роман із Марлою Мейплз, тому мені довелося розлучитися. Бог знає, що я люблю гарних жінок, я люблю їх усіх!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1984</em></p>
+                                        <p>
+                                            Народження Еріка Трампа
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1982</em></p>
+                                        <p>
+                                            Народження Іванки Трамп
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1977</em></p>
+                                        <p>
+                                            У мене народився перший син. Я його, звысно ж, назвав Дональдом!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1977</em></p>
+                                        <p>
+                                            Одружився із чеською моделлю Іванною Зельничковою
+                                        </p>
+                                    </li>
+                                </ul>
+                                <h3>КАР'ЄРА В МЕДІА</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>2019</em></p>
+                                        <p>
+                                            Був нагороджений найгіршим актором та найгіршим екранним комбо на преміях Golden Raspberry Awards за ролі в "Смерть нації" та "Фаренгейт 11/9"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2015</em></p>
+                                        <p>
+                                            Опублікував книгу "Покалічена Америка: як зробити Америку знову великою"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2011</em></p>
+                                        <p>
+                                            Опублікував книгу "Час стати важким: Зробити Америку №1 знову" спільно з Уїнтон Холом, Пітером Швайцером та Мередіт Маківер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2011</em></p>
+                                        <p>
+                                            Опублікував книгу "Midas Touch: Чому деякі підприємці стають багатими - і чому більшість не робить цього" спільно з Робертом Кійосакі
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2011</em></p>
+                                        <p>
+                                            Опублікував книгу "Вежа Трампа" у співавторстві з Джефрі Робінзоном
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2009</em></p>
+                                        <p>
+                                            Опублікував книгу "Думай як чемпіон: неформальна освіта в бізнесі та житті" спільно з Мередіт Маківер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2008</em></p>
+                                        <p>
+                                            Опублікував книгу "Ніколи не здавайся: як я перетворив свої найбільші виклики в успіх" у співавторстві з Мередіт Маківер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2007</em></p>
+                                        <p>
+                                            Опублікував книгу "Думай про велику та надирай дупу" у співавторстві з Біллом Занкером
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2007</em></p>
+                                        <p>
+                                            Отримав зірку на Голлівудській алеї слави за те, що був продюсером конкурсу "Міс Всесвіт"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2006</em></p>
+                                        <p>
+                                            Опублікував книгу "Чому ми хочемо, щоб ти був багатим" у співавторстві з Мередіт Маківер та Робертом Кійосакі
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2006</em></p>
+                                        <p>
+                                            Опублікував книгу "Як побудувати щастя: твій план успіху від найвідомішого бізнесмена світу"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2006</em></p>
+                                        <p>
+                                            Опублікував книгу "Найкращі поради щодо нерухомості, які я отримував: 100 кращих експертів поділяться своїми стратегіями"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2006</em></p>
+                                        <p>
+                                            Опублікував книгу "Трамп 101: Шлях до успіху" у співавторстві з Мередіт Маківер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2005</em></p>
+                                        <p>
+                                            Опублікував книгу "Найкращі поради з гольфу, які я коли-небудь отримував"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2005</em></p>
+                                        <p>
+                                            Виконав пісню з Меган Маллаллі на 57-й нагороді Primeetime Emmy
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2004 ― 2008</em></p>
+                                        <p>
+                                            Почав вести радіопрограму "Trumped!" (одна-дві хвилини в будні дні)
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2004</em></p>
+                                        <p>
+                                            Опублікував книгу "Трамп: як розбагатіти" у співавторстві з Мередіт Маківер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2004</em></p>
+                                        <p>
+                                            Опублікував книгу "Шлях до вершини: найкраща ділова порада, яку я отримував"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2004</em></p>
+                                        <p>
+                                            Опублікував книгу "Думай як мільярдер: Все, що потрібно знати про успіх, нерухомість та життя" у співавторстві з Мередіт Маківер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2003 ― 2015</em></p>
+                                        <p>
+                                            Був продюсером реаліті-шоу від каналу NBC "Учень" та "Учень знаменитостей"
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>2000</em></p>
+                                        <p>
+                                            Опублікував книгу "Трамп: Америка, яку ми заслуговуємо" у співавторстві з Дейвом Шифлеттом
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1997</em></p>
+                                        <p>
+                                            Опублікував книгу "Трамп: Мистецтво повернення" у співавторстві з Кейт Бонер
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1991</em></p>
+                                        <p>
+                                            Був нагороджений найгіршим актором на "Золотій малині" за участь у «Привиди не можуть робити цього»
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1990</em></p>
+                                        <p>
+                                            Опублікував книгу "Трамп: Виживання на вершині" у співавторстві з Чарльзом Лірсеном
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1987</em></p>
+                                        <p>
+                                            Опублікував книгу "Трамп: Мистецтво угоди" у співавторстві з Тоні Шварцом
+                                        </p>
+                                    </li>
+                                </ul>
+                                <h6>Ти навіжений -_-</h6>
+                                <p>
+                                    Не всі можуть витримати, щоб повністю прочитати мою біографію. Але навіть, якщо ти дійсно безумець, то ти все одно мені подобаєшся! Якщо ти хочеш бути частиною моєї команди (навіть дистанційно), то надішли мені <a href="#mailMe">електронний
+                                        лист</a>і в темі напиши слово "insane"&#128521;
+                                    </h6>
+                                </p>
+                            </section>
+                        </div>
+                        <div class="six wide column">
+                            <section>
+                                <h3>Мови</h3>
+                                <p class="tags small">
+                                    <a href="/" hreflang="en" rel="alternate" class="language" lang="en">🇺🇸
+                                        <span>ENGLISH</span></a>
+                                    <span>🇺🇦 УКРАЇНСЬКА</span>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>Навички</h3>
+                                <p class="tags small">
+                                    <span class="nowrap">УКЛАДАННЯ ДОГОВОРІВ</span> ПІДРАХУНОК РЕКОНСТРУКЦІЯ ПИСЬМЕННИЦТВО СПІВИ ЗВІТНІСТЬ <span class="nowrap">ОБ'ЄДНУВАННЯ КОМПАНІЙ </span> ПРОДАЖІ РЕКЛАМА ГОСПОДАРЮВАННЯ КОНКУРЕНЦІЯ ТВІТЕРІНГ БАТЬКІВСТВО
+                                    <span class="nowrap">АЗАРТНІ ІГРИ</span> ПОБАЧЕННЯ ЗАПОЗИЧЕННЯ ОРГАНІЗАЦІЯ ФОНДУВАННЯ ДЕБАТУВАННЯ КОНСУЛЬТУВАННЯ ПРЕСВІТЕРІАНСТВО
+                                </p>
+                            </section>
+                            <section>
+                                <h3>ХАРАКТЕР</h3>
+                                <p class="tags small">
+                                    ПРИСТОСОВАНИЙ СПОКІЙНИЙ АМБІТНИЙ КОНКУРЕНТНИЙ СОЦІАЛЬНИЙ ПРЯМИЙ ВОРОЖИЙ БЕЗТУРБОТНИЙ НЕОБІЗНАНИЙ ДОПИТЛИВИЙ СМІЛИВИЙ САМОВПЕВНЕНИЙ ПУСТОТЛИВИЙ ЧАРІВНИЙ ЦІКАВИЙ ЗУХВАЛИЙ ЯСКРАВИЙ ЛІНИВИЙ ХВАЛЬКУВАТИЙ
+                                </p>
+                            </section>
+                            <section>
+                                <h3>ВПОДОБАННЯ &#x1f603; <sup><a
+                                            href="https://www.youtube.com/watch?v=0f9ysmciWUk">[1]</a></sup></h3>
+                                <p class="tags small">
+                                    <a href="https://www.youtube.com/watch?v=u_aLESDql1U">МІЛЬЯРДИ</a> ФІЛЕ-О-ФІШ <span class="nowrap">БІГ МАК</span>
+                                    <a href="https://www.youtube.com/watch?v=RDrfE9I8_hs">КИТАЙ</a> <span class="nowrap">ЧВЕРТЬФУНТОВИЙ ГАМБУРГЕР</span><sup><a
+                                            href="https://www.youtube.com/watch?v=TTdmKaXAfAs">[2]</a></sup> <span class="nowrap">ДІЄТИЧНА
+                                        КОЛА</span> ТАРИФИ БІБЛІЯ <span class="nowrap">МИСТЕЦВО УГОД </span> ПАТРІОТИ
+                                    <span class="nowrap">ГАРНІ
+                                        МОДЕЛІ</span> <button id="gold" class="color gold">ЗОЛОТО</button> НЕРУХОМІСТЬ ВІЙНА ПРОТЕСТУЮЧІ БУДІВНИЦТВО <span class="nowrap">РОСІЯНИ<strong><sup>**</sup></strong></span>                                    БАНКИ СПОРТ ЖІНКИ МЕКСИКА <span class="nowrap">ЧЕРВОНІ БЕЙСБОЛКИ</span> КОРЕЙЦІ ГОЛЬФ ВСІ
+                                </p>
+                                <p><strong><sup>**</sup></strong>насправді вас я люблю більше, навіть доньку &#x1F476; назвав Іванкою &#x1F499; &#128155;</p>
+                            </section>
+                            <section>
+                                <h3>АНТИПАТІЯ&#x1f61e;</h3>
+                                <p class="tags small">
+                                    СОБАКИ МЕДІА <span class="nowrap">КАНАЛ "CNN"</span> НІМЦІ <span class="nowrap">МЕКСИКАНСЬКІ ІМІГРАНТИ</span> <span class="nowrap">БРУДНІ
+                                        КРАЇНИ</span> <span class="nowrap">НЕПРИВАБЛИВІ ЖІНКИ</span> ЧОРНОШКІРІ СУШІ ХОТ-ДОГИ АЛКОГОЛЬ ФРУКТИ РІЗДВО ВЕЧІРКИ ЛІБЕРАЛИ
+                                </p>
+                            </section>
+                            <section>
+                                <h3>ПРАГНЕННЯ&#x1f97a;</h3>
+                                <p class="tags small bulleted">
+                                    <span class="tag nowrap">БУТИ ЗДОРОВИМ</span><span class="tag nowrap">ВИРОСТИТИ
+                                        ДЕРЕВО</span><span class="tag nowrap">ПОБУДУВАТИ ТРАМП АЕРОПОРТ</span><span class="tag nowrap">МАТИ СМАК </span> <span class="tag nowrap">ЗРОБИТИ ГАРЛЕМ
+                                        ШЕЙК У КОНГРЕСІ</span>
+                                    <span class="tag nowrap">ГРАТИ У ГОЛЬФ ЧАСТІШЕ</span><span class="tag nowrap">ВИГРАТИ УСІ СУДОВІ ПОЗОВИ</span>
+                                </p>
+                            </section>
+                            <section>
+                                <h3>ОСВІТА</h3>
+                                <ul class="timeline">
+                                    <li>
+                                        <p><em>2011</em></p>
+                                        <p>
+                                            Попросив друзів, які є видатними та заможними випускниками Нью-Йоркської військової академії, щоб вони засекретили мої оцінки, щоб їх ніхто не бачив, ніколи!
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1966</em></p>
+                                        <p>
+                                            Перевівся до школи Уартон університету Пенсільванії та закінчив у травні 1968 року, отримавши ступінь бакалавра з економіки.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1964</em></p>
+                                        <p>
+                                            Почав навчання в університеті Фордхема
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><em>1959</em></p>
+                                        <p>
+                                            Поступив у Військову академію Нью-Йорка, приватну школу-інтернат, після того, як мої батьки виявили, що я часто відвідував Манхеттен без їх дозволу
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+
+                            </section>
+                            <!-- Articles -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <em>"To be continued..."</em>
+    </footer>
+    <script>
+        function switchToColor(color) {
+            try {
+                document.querySelectorAll(".page").forEach(function(page) {
+                    page.style.borderColor = color;
+                });
+                document.querySelectorAll(".avatar").forEach(function(avatar) {
+                    avatar.contentDocument.getElementById("circle").setAttribute("fill", color);
+                });
+            } catch (error) {}
+        }
+        document.getElementById("red").addEventListener("click", switchToColor.bind(this, "red"));
+        document.getElementById("gold").addEventListener("click", switchToColor.bind(this, "gold"));
+    </script>
+</body>
+
+</html>
