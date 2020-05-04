@@ -23,6 +23,34 @@
         .color.red:before {
             background-color: red;
         }
+        
+        #topBtn {
+            background: red;
+            position: fixed;
+            right: 1.2em;
+            bottom: 1.2em;
+            display: block;
+            width: 48px;
+            height: 48px;
+            margin: 0;
+            padding: 0 1.2em;
+            border: 1px solid #3B2551;
+            border-radius: 2px;
+            font-weight: bold;
+            text-transform: capitalize;
+            line-height: 44px;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            margin-left: -9px;
+            margin-top: -5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -510,6 +538,12 @@
                     </div>
                 </div>
             </div>
+            <button onclick="topFunction()" id="topBtn" title="Go to top">
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" points="
+                0.375, 35.375 28.375, 0.375 58.67, 35.375 " />
+                  </svg>
+            </button>
         </article>
     </main>
     <footer>
@@ -520,6 +554,7 @@
             try {
                 document.querySelectorAll(".page").forEach(function(page) {
                     page.style.borderColor = color;
+                    document.getElementById("topBtn").style.background = color;
                 });
                 document.querySelectorAll(".avatar").forEach(function(avatar) {
                     avatar.contentDocument.getElementById("circle").setAttribute("fill", color);
@@ -556,6 +591,26 @@
             window.addEventListener("load", function() {
                 navigator.serviceWorker.register('/sw.js');
             });
+        }
+
+
+        toTopBtn = document.getElementById("topBtn");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                toTopBtn.style.display = "block";
+            } else {
+                toTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
 </body>
