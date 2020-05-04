@@ -15,6 +15,15 @@
     <meta name="subject" content="This is just a résumé.">
     <base href="https://rusgumeniuk.github.io/homepage/">
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <style>
+        .color.gold:before {
+            background-color: gold;
+        }
+        
+        .color.red:before {
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +39,7 @@
     </header>
     <main>
         <article>
-            <div class="page" style="border-color: midnightblue;">
+            <div class="page" style="border-color: red;">
                 <div class="stackable grid">
                     <div class="row">
                         <div class="three wide center aligned column">
@@ -136,7 +145,7 @@
                                 <ul class="timeline">
                                     <li>
                                         <p><em>2009</em></p>
-                                        <p>Changed my mind and <strong>became Republican</strong> <sub>again</sub></p>
+                                        <p>Changed my mind and <strong>became <button id="red" class="color red">Republican</button> </strong> <sub>again</sub></p>
                                     </li>
                                     <li>
                                         <p><em>2005</em></p>
@@ -390,8 +399,7 @@
                             <section>
                                 <h3>LIKES &#x1f603; <sup><a href="https://www.youtube.com/watch?v=0f9ysmciWUk">[1]</a></sup></h3>
                                 <p class="tags small">
-                                    <a href="https://www.youtube.com/watch?v=u_aLESDql1U">BILLIONS</a> FILET-O-FISH <span class="nowrap">BIG MAC</span><sup><a href="https://www.youtube.com/watch?v=TTdmKaXAfAs">[2]</a></sup> <a href="https://www.youtube.com/watch?v=RDrfE9I8_hs">CHINA</a>                                    QUARTER POUNDER <span class="nowrap">DIET COKE</span> TARIFFS BIBLE ARTOF DEAL PATRIOTS <span class="nowrap">BEAUTIFUL MODELS</span> GOLD <span class="nowrap">REAL ESTATE</span> WAR PROTESTERS CONSTRUCTION RUSSIANS
-                                    BANKS SPORTS WOMEN MEXICO <span class="nowrap">RED HAT</span> KOREANS GOLF EVERYBODY
+                                    <a href="https://www.youtube.com/watch?v=u_aLESDql1U">BILLIONS</a> FILET-O-FISH <span class="nowrap">BIG MAC</span><sup><a href="https://www.youtube.com/watch?v=TTdmKaXAfAs">[2]</a></sup> <a href="https://www.youtube.com/watch?v=RDrfE9I8_hs">CHINA</a>                                    QUARTER POUNDER <span class="nowrap">DIET COKE</span> TARIFFS BIBLE ARTOF DEAL PATRIOTS <span class="nowrap">BEAUTIFUL MODELS</span> <button id="gold" class="color gold">GOLD</button> <span class="nowrap">REAL ESTATE</span>                                    WAR PROTESTERS CONSTRUCTION RUSSIANS BANKS SPORTS WOMEN MEXICO <span class="nowrap">RED HAT</span> KOREANS GOLF EVERYBODY
                                 </p>
                             </section>
                             <section>
@@ -451,6 +459,18 @@
         <em>"To be continued..."</em>
     </footer>
     <script>
+        function switchToColor(color) {
+            try {
+                document.querySelectorAll(".page").forEach(function(page) {
+                    page.style.borderColor = color;
+                });
+                document.querySelectorAll(".avatar").forEach(function(avatar) {
+                    avatar.contentDocument.getElementById("circle").setAttribute("fill", color);
+                });
+            } catch (error) {}
+        }
+        document.getElementById("red").addEventListener("click", switchToColor.bind(this, "red"));
+        document.getElementById("gold").addEventListener("click", switchToColor.bind(this, "gold"));
     </script>
 </body>
 
