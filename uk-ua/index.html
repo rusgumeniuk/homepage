@@ -25,9 +25,15 @@
 </head>
 
 <body>
-    <dialog id="movieCareer">
-        <a class="close" href="#resume" title="Hide movie cameos">Сховати</a>
-        <div class="cameos"></div>
+    <dialog id="myPhotos">
+        <a class="close" href="#resume" title="Сховати найкращі фото в світі">Закрити</a>
+        <div class="photos">
+            <noscript>
+                <img src="./assets/photos/with_mask.jpg" alt="Я дійсно люблю себе">
+                <img src="./assets/photos/joker.jpg" alt="Я можу бути різним">
+                <img src="./assets/photos/draw.jpg" alt="Я справжній талант">
+            </noscript>
+        </div>
     </dialog>
     <header>
         <div class="credits">
@@ -478,12 +484,18 @@
                                         </p>
                                     </li>
                                 </ul>
-                                <h6>Ти навіжений -_-</h6>
-                                <p>
-                                    Не всі можуть витримати, щоб повністю прочитати мою біографію. Але навіть, якщо ти дійсно безумець, то ти все одно мені подобаєшся! Якщо ти хочеш бути частиною моєї команди (навіть дистанційно), то надішли мені <a href="#mailMe">електронний
-                                        лист</a>і в темі напиши слово "insane"&#128521;
-                                    </h6>
-                                </p>
+                                <section>
+                                    <h6>Ти навіжений -_-</h6>
+                                    <p>
+                                        Не всі можуть витримати, щоб повністю прочитати мою біографію. Але навіть, якщо ти дійсно безумець, то ти все одно мені подобаєшся! Якщо ти хочеш бути частиною моєї команди (навіть дистанційно), то надішли мені
+                                        <a href="#mailMe">електронний лист
+                                            </a>і в темі напиши слово "insane"&#128521;
+                                    </p>
+                                </section>
+                                <section>
+                                    <h3>Як подарунок, можеш переглянути мої камео у різних фільмах та ТВ шоу</h3>
+                                    <iframe title="Мої камео" width="560" height="315" src="https://www.youtube.com/embed/yosAVMB47-Y?start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </section>
                             </section>
                         </div>
                         <div class="six wide column">
@@ -567,9 +579,18 @@
                                 </ul>
                             </section>
                             <section>
-
+                                <!-- Articles -->
                             </section>
-                            <!-- Articles -->
+                            <section>
+                                <a id="resume" href="#myPhotos" title="Показати фото">
+                                    <span class="dots">
+                                        <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    </span>
+                                    <em>Насолоджуйся...</em>
+                                </a>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -592,6 +613,32 @@
         }
         document.getElementById("red").addEventListener("click", switchToColor.bind(this, "red"));
         document.getElementById("gold").addEventListener("click", switchToColor.bind(this, "gold"));
+
+        function replaceNoscript(noscript) {
+            var parent = noscript.parentElement;
+            Array.prototype.slice.call((new DOMParser()).parseFromString(noscript.textContent, "text/html").body.children).forEach(function(element) {
+                parent.insertBefore(element, noscript);
+            });
+            parent.removeChild(noscript);
+        }
+
+        function callFuncOnCollection(collection, func) {
+            Array.prototype.slice.call(collection).map(function(item) {
+                func(item);
+            });
+        }
+        var childhoodPhotos = document.getElementById("myPhotos").getElementsByClassName("photos")[0];
+        document.getElementById("resume").addEventListener("click", function() {
+            callFuncOnCollection(childhoodPhotos.getElementsByTagName("NOSCRIPT"), replaceNoscript);
+        });
+        if (window.location.hash === "#myPhotos") {
+            callFuncOnCollection(childhoodPhotos.getElementsByTagName("NOSCRIPT"), replaceNoscript);
+        }
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
     </script>
 </body>
 
