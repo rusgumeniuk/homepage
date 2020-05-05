@@ -595,11 +595,6 @@
         if (window.location.hash === "#myPhotos") {
             callFuncOnCollection(childhoodPhotos.getElementsByTagName("NOSCRIPT"), replaceNoscript);
         }
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function() {
-                navigator.serviceWorker.register('/sw.js');
-            });
-        }
 
 
         toTopBtn = document.getElementById("topBtn");

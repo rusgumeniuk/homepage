@@ -66,9 +66,9 @@
         <a class="close" href="#resume" title="Сховати найкращі фото в світі">Закрити</a>
         <div class="photos">
             <noscript>
-                <img src="./assets/photos/with_mask.jpg" alt="Я дійсно люблю себе">
-                <img src="./assets/photos/joker.jpg" alt="Я можу бути різним">
-                <img src="./assets/photos/draw.jpg" alt="Я справжній талант">
+                <img src="/homepage/assets/photos/with_mask.jpg" alt="Я дійсно люблю себе">
+                <img src="/homepage/assets/photos/joker.jpg" alt="Я можу бути різним">
+                <img src="/homepage/assets/photos/draw.jpg" alt="Я справжній талант">
             </noscript>
         </div>
     </dialog>
@@ -675,16 +675,13 @@
             });
         }
         var childhoodPhotos = document.getElementById("myPhotos").getElementsByClassName("photos")[0];
+
         document.getElementById("resume").addEventListener("click", function() {
             callFuncOnCollection(childhoodPhotos.getElementsByTagName("NOSCRIPT"), replaceNoscript);
         });
+
         if (window.location.hash === "#myPhotos") {
             callFuncOnCollection(childhoodPhotos.getElementsByTagName("NOSCRIPT"), replaceNoscript);
-        }
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function() {
-                navigator.serviceWorker.register('/sw.js');
-            });
         }
 
         toTopBtn = document.getElementById("topBtn");
